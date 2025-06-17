@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (allowedKeys.includes(e.key)) {
             e.preventDefault();
-            // Prevent entering the same number or operator twice in a row
+            
             const lastChar = resultField.value.slice(-1);
             const operators = ["+", "-", "*", "/", "%", "." ,"%"];
             if (
                 (e.key >= "0" && e.key <= "9" && lastChar === e.key) ||
                 (operators.includes(e.key) && operators.includes(lastChar))
             ) {
-                // Do nothing if same number or operator is entered twice
+                
                 return;
             }
             resultField.value += e.key;
