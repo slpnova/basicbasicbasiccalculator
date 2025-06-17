@@ -70,13 +70,13 @@ button {
     background-color: #2b3e52
 }
 
-/* Buton gruplarını saran div'leri ortala ve taşmayı engelle */
+
 .d-flex.flex-wrap {
     justify-content: center;
     gap: 10px;
 }
 
-/* Genişliğe taşma varsa kaymasını engelle */
+
 .col-md-6 {
     overflow-x: hidden;
 }
